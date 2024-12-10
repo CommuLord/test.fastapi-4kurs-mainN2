@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Management</h1>
+
+        <h2>Users</h2>
+        <ul id="user-list"></ul>
+
+        <h2>Create User</h2>
+        <form id="create-user-form">
+            <label for="create-username">Username:</label>
+            <input type="text" id="create-username" name="username" required>
+            <label for="create-email">Email:</label>
+            <input type="email" id="create-email" name="email" required>
+            <label for="create-full-name">Full Name:</label>
+            <input type="text" id="create-full-name" name="full_name">
+            <label for="create-password">Password:</label>
+            <input type="password" id="create-password" name="password" required>
+            <button type="submit">Create User</button>
+        </form>
+
+        <h2>Update User</h2>
+        <form id="update-user-form">
+            <label for="update-user-id">User ID:</label>
+            <input type="number" id="update-user-id" name="user_id" required>
+            <label for="update-username">Username:</label>
+            <input type="text" id="update-username" name="username">
+            <label for="update-email">Email:</label>
+            <input type="email" id="update-email" name="email">
+            <label for="update-full-name">Full Name:</label>
+            <input type="text" id="update-full-name" name="full_name">
+            <label for="update-password">Password:</label>
+            <input type="password" id="update-password" name="password">
+            <button type="submit">Update User</button>
+        </form>
+
+        <h2>Delete User</h2>
+        <form id="delete-user-form">
+            <label for="delete-user-id">User ID:</label>
+            <input type="number" id="delete-user-id" name="user_id" required>
+            <button type="submit">Delete User</button>
+        </form>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
